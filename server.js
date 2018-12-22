@@ -41,6 +41,13 @@ app.get('/', (req, res) => {
   })
 })  // setting up handler for get request
 
+app.get('/projects', (req, res) => {
+  res.render('projects.hbs', {
+    pageTitle: 'Projects'
+  })
+})
+
+
 app.get('/about', (req, res) => {
   res.render('about.hbs', {
     pageTitle: 'About Page',
